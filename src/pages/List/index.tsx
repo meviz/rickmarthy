@@ -27,7 +27,7 @@ export const List = () => {
 
 	useEffect(() => {
 		episodeListQuery.refetch();
-	}, [currentPage]);
+	}, [currentPage, episodeListQuery]);
 
 	const handlePaginationChange = (page: number) => {
 		setCurrentPage(page);
